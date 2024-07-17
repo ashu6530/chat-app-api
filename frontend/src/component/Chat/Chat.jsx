@@ -7,7 +7,7 @@ import ScrollToBottom from "react-scroll-to-bottom";
 import { ImCancelCircle } from "react-icons/im";
 
 let socket;
-const ENDPOINT = "http://localhost:3000/";
+const ENDPOINT = "https://chat-app-api-jr99.vercel.app/";
 
 const Chat = () => {
   const location = useLocation();
