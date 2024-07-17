@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Define a route
 app.get('/',(req,res)=>{
-    res.send('Hey There')
+    res.send('Hello')
 })
 
 // Create the HTTP server
