@@ -28,7 +28,6 @@ const io = new SocketServer(server,{
     cors: {
       origin: 'chat-app-frontend-eight-coral.vercel.app', // Update with your frontend URL
       methods: ['GET', 'POST'],
-      allowedHeaders: ['my-custom-header'],
       credentials: true
     }
   })
