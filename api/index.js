@@ -1,10 +1,13 @@
 import http from 'http'
 import express from 'express'
 import cors from 'cors'
+import dotenv from 'dotenv'
 import { Server as SocketServer } from 'socket.io'
-
+dotenv.config();
 const app = express()
 const PORT = 3000 || process.env.PORT
+
+console.log(process.env.PORT);
 
 const users =[{}]
 
