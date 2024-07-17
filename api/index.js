@@ -12,7 +12,11 @@ console.log(process.env.PORT);
 const users =[{}]
 
 // Middleware setup
-app.use(cors());
+app.use(cors({
+    origin: 'https://chat-app-frontend-eight-coral.vercel.app', // Ensure you are using https
+    methods: ['GET', 'POST'],
+    credentials: true
+  }));
 app.use(express.json());
 
 // Define a route
